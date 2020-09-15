@@ -6,52 +6,149 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="robots" content="NOINDEX, NOFOLLOW" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700"
+      rel="stylesheet"
+    />
+
     <title>Locus Solus</title>
   </head>
   <body>
-    <div class="background-image">
-      <div class="header container">
-        <h1 class="text-center">Locus Solus</h1>
-        <h2 class="text-center">Welcome to the park of loss</h2>
-        <h3 class="text-center">- A documentary in VR -</h3>
-      </div>
-      <div class="main">
-        <div class="infotekst container">
-          <p>
-            “Mijn grootvader zei dat hij niet geboren was, maar dat hij op een
-            dag gevonden werd in park Locus Solus. Het park waar La machine
-            celibataire stond. Deze machine maakt mensen onsterfelijk maar
-            ontneemt ook hun geheugen.
-          </p>
+    <div class="v-header">
+      <div class="fullscreen-video-wrap">
+        <video autoplay loop muted>
+          <source
+            src="./assets/free-overlay_scratches-hair-dust-no-noise-1080p_CC_temene.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <iframe
+          src="./assets/geluid-website.mp3"
+          allow="autoplay"
+          style="display: none"
+          id="iframeAudio"
+        >
+        </iframe>
+        <audio autoplay loop>
+          <source src="./assets/geluid-website.mp3" />
+        </audio>
 
-          <p>
-            Toen mijn grootvader gevonden werd leed hij aan geheugenverlies.
-          </p>
-
-          <p>
-            Na zijn dood vond ik bij zijn spullen een doos met het opschrift
-            ‘Locus Solus’. Mijn grootvader verzamelde alles over Locus Solus.
-            Ook schreef hij alles op over wat hem te binnen schoot. Hij
-            herinnerde zich flarden gesprekken met andere bezoekers.
-          </p>
-          <p>
-            Via de foto’s en de notities ga ik op zoek naar mijn grootvader. Wie
-            hij was?  Waarom wilde hij onsterfelijk en zonder geheugen zijn?”
-          </p>
-        </div>
-        <div class="knop container">
-          <p class="text-center">button</p>
-        </div>
-        <div class="contact container">
-          <p class="text-center">Maurits Wouters</p>
-          <p class="text-center">wouters.maurits@gmail.com</p>
-        </div>
+        <!--<iframe src="geluid-website.mp3" allow="autoplay" id="iframeAudio" style="display: none"></iframe>
+        <audio autoplay loop  id="playAudio">
+          <source src="geluid-website.mp3">
+      </audio>-->
       </div>
-      <div class="footer container">
-        <p class="text-center">partners</p>
+
+      <!--<div class="fullscreen-foto-wrap">
+        <img src="./Still Locus Solus.jpg" alt="bg-img" />
+      </div>-->
+
+      <div class="container background-image">
+        <div class="tekst">
+          <div class="header container">
+            <div class="titel">
+              <h2 class="text-center h2_fonts">Welcome to the park of loss</h2>
+              <h1 class="text-center h1_locusSolus">Locus Solus</h1>
+              <h3 class="text-center h3_fonts">- A documentary in VR -</h3>
+            </div>
+          </div>
+          <div class="main container">
+            <div class="infotekst-tekst">
+              <p class="fonts text-justify padding-tekst">
+                Mijn
+                <span id="woorden">grootvader</span>
+                zei dat hij niet geboren was, maar dat hij op een dag gevonden
+                werd in park Locus Solus. Het park waar
+                <span id="woorden">La machine celibataire</span>
+                stond. Deze machine maakt mensen onsterfelijk maar ontneemt ook
+                hun geheugen.
+              </p>
+
+              <p class="fonts text-justify padding-tekst">
+                Na zijn dood vond ik een doos met het opschrift ‘<span
+                  id="woorden"
+                  >Locus Solus</span
+                >’. Mijn grootvader verzamelde alles over Locus Solus. Ook
+                schreef hij alles op over wat hem te binnen schoot. Hij
+                herinnerde zich flarden gesprekken met andere bezoekers.
+              </p>
+            </div>
+          </div>
+
+          <div class="knop-game">
+            <button class="enter cursor container">
+              <h2 class="text-center button_fonts_front">- Enter game -</h2>
+
+              <h3 class="text-center button_fonts_back">
+                Welcome to the <br />
+                park of loss
+              </h3>
+              <img src="./assets/imagespalm.png" id="palm" />
+            </button>
+          </div>
+
+          <div class="footer container">
+            <div class="contact">
+              <h3 class="fonts padding-Contact titel_contact">Contact</h3>
+              <p class="fonts bericht_contact">
+                Wil je meer weten over dit project of wil je je inschrijven voor
+                de niuwsbrief, stuur een bericht.
+              </p>
+              <input
+                type="text"
+                name="naam"
+                value="naam"
+                id="naam"
+                class="text-justify cursor"
+              />
+              <input
+                type="email"
+                name="email"
+                value="email"
+                id="email"
+                class="text-justify cursor"
+              />
+              <input
+                type="text"
+                name="tekst"
+                value="Schrijf hier je bericht"
+                id="tekst_contact"
+                class="text-justify cursor hover"
+              />
+              <input
+                type="submit"
+                value="Verstuur"
+                id="verstuur"
+                class="cursor"
+              />
+            </div>
+            <div class="partners container">
+              <h3 class="fonts titel_partners">partners</h3>
+
+              <div class="logos black_white">
+                <img
+                  src="./assets/download.png"
+                  alt="logo_LuycksGallery"
+                  id="logo_LuycksGallery"
+                  class="black_white"
+                />
+                <img
+                  src="./assets/images.png"
+                  alt="logo_huisVoorBeeldGeluid"
+                  id="logo_huisVoorBeeldGeluid"
+                  class="black_white"
+                />
+                <img
+                  src="./assets/kunstloc-brabant-s1920x1080_0.jpg"
+                  alt="logo_kunstloc"
+                  id="logo_kunstloc"
+                  class="black_white"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <script src="javascript.js"></script>
   </body>
 </html>
