@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>-->
+  </head>
+  <body>
+    <style>
+      .embed-container {
+        position: relative;
+        padding-bottom: 100vh;
+        height: 0;
+        overflow: hidden;
+        /*max-width: 100%;*/
+        border: 3px solid red;
+      }
+      .embed-container iframe,
+      .embed-container object,
+      .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+    <div class="embed-container">
+      <iframe
+        allowfullscreen="true"
+        scrolling="no"
+        src="https://storage.googleapis.com/vrview/2.0/index.html?image=https://cors-anywhere.herokuapp.com/http://www.dotdotcommadot.org/maurits/test4.jpg"
+        style="border: 0px"
+      ></iframe>
+    </div>
+
+    <!--<div>
+      <div class="video" id="vrview"></div>
+
+      <div class="dining-room">
+        <h1>jhgcjytcjytc</h1>
+      </div>
+    </div>-->
+
+    <!-- https://developers.google.com/vr/discover/360-degree-media -->
+    <!-- https://developers.google.com/vr/develop/web/vrview-web -->
+
+    <!--<script type="text/javascript">
+      window.addEventListener("load", onVrViewLoad);
+
+      function onVrViewLoad() {
+        var vrView = new VRView.Player("#vrview", {
+          image:
+            "https://cors-anywhere.herokuapp.com/http://www.dotdotcommadot.org/maurits/test4.jpg",
+          /*width: document.getElementById("vrview").offsetWidth,*/
+          width: 800,
+          height: 800,
+        });
+
+        vrView.on("ready", function () {
+          vrView.addHotspot("dining-room", {
+            pitch: 30, // In degrees. Up is positive.
+            yaw: 20, // In degrees. To the right is positive.
+            radius: 0.05, // Radius of the circular target in meters.
+            distance: 2, // Distance of target from camera in meters.
+          });
+        });
+      }
+    </script>-->
+  </body>
+</html>
