@@ -8,7 +8,10 @@
     <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
   </head>
   <body>
-    <div class="video" id="vrview"></div>
+    <div class="video">
+      <div id="vrview"></div>
+    </div>
+
     <!-- https://developers.google.com/vr/discover/360-degree-media -->
     <!-- https://developers.google.com/vr/develop/web/vrview-web -->
 
@@ -19,8 +22,9 @@
         var vrView = new VRView.Player("#vrview", {
           image:
             "https://cors-anywhere.herokuapp.com/http://www.dotdotcommadot.org/maurits/test4.jpg",
-          width: document.getElementById("vrview").offsetWidth,
-          height: document.getElementById("vrview").offsetHeight,
+          /*width: document.getElementById("vrview").offsetWidth,*/
+          width: 800,
+          height: 800,
         });
       }
     </script>
