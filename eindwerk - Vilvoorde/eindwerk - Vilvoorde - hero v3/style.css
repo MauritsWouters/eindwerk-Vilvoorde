@@ -17,9 +17,14 @@
   z-index: -5;
   display: block;
 }
+#myVideo {
+  height: 100vh;
+  width: auto;
+}
 
 .onepager {
   display: block;
+  opacity: 100;
 }
 
 /*structuur*/

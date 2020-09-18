@@ -21,7 +21,6 @@
 .onepager {
   display: block;
 }
-
 /*structuur*/
 
 .tekst {
@@ -277,6 +276,7 @@
 }
 
 /*achtergrondvideo achtergrondfoto*/
+
 .fullscreen-video-wrap {
   position: fixed;
   top: 0;
@@ -284,6 +284,14 @@
   height: 100vh;
   opacity: 70%;
   -webkit-animation: fadeout 35s linear 1 normal forwards;
+}
+.fullscreen-video-wrap_fadeIn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  opacity: 100%;
+  border: 3px solid red;
 }
 
 @-webkit-keyframes fadeout {
