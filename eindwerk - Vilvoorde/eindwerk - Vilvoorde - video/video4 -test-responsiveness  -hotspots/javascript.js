@@ -17,4 +17,13 @@ function onVrViewLoad() {
       distance: 2, // Distance of target from camera in meters.
     });
   });
+
+  vrView.on("click", function (event) {
+    if (event.id == "dining-room") {
+      var vid = document.getElementById("myVideo");
+      function playVid() {
+        vid.play();
+      }
+    }
+  });
 }
